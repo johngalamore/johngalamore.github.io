@@ -183,10 +183,12 @@
         overflow-x: scroll;
         }
       }
+
     </style>
 </head>
 
 <body>
+  <div class="window" style=" overflow: auto; width: 50%;resize: horizontal;">
 <div class="title-bar">
     <div class="title-bar-text">John Galamore - Table of Contents</div>
     <div class="title-bar-controls">
@@ -228,8 +230,14 @@
         </details>
       </li>
     </ul>
+
+</div>
+
+
+
     <br><br>
-    <div id="prelude">
+
+  <div id="prelude" class="window" >
       <div class="title-bar">
       <div class="title-bar-text">John Galamore - Chapter One</div>
       <div class="title-bar-controls">
@@ -237,9 +245,11 @@
       </div>
     </div>
         <embed class="embeed"type="application/pdf" src="one.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="640px">
+</div>
       <br><br>
-    </div>
-    <div id="222">
+
+
+    <div id="222" class="window">
       <div class="title-bar">
       <div class="title-bar-text">John Galamore - Chapter Two</div>
       <div class="title-bar-controls">
@@ -247,8 +257,8 @@
       </div>
     </div>
         <embed class="embeed"type="application/pdf" src="two.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="640px">
-      <br><br>
     </div>
+      <br><br>
 </body>
 <script>
   document.getElementById("prelude").style.display = "none";
